@@ -39,6 +39,9 @@ function createWatchers() {
 function triggerViewer() {
     setInterval(createWatchers, 2500)
     setInterval(createBuyers, 8000)
+    let barConstant = document.querySelector(".smartplayer-fake-bar")
+    var barNumber = parseInt(barConstant.style.width)
+    alert(barNumber)
 }
 
 function clickGender() {
