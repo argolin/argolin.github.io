@@ -121,6 +121,8 @@ function clickVideo() {
 
 
 window.addEventListener("load", upDate());
-
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
 
 
