@@ -452,4 +452,8 @@ body {
     background: linear-gradient(90deg, rgba(51,133,0,1) 10%, rgba(80,236,14,1) 50%, rgba(51,133,0,1) 90%);
     padding: 8px 16px;
     border-radius: 10px;
+    box-shadow: 2px -4px 34px -8px rgba(51,133,0,0.75);
+    -webkit-box-shadow: 2px -4px 34px -8px rgba(51,133,0,0.75);
+    -moz-box-shadow: 2px -4px 34px -8px rgba(51,133,0,0.75);
+    margin: 10px;
 }
