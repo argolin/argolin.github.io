@@ -34,14 +34,17 @@ function createBuyers() {
 function createWatchers() {
     let watchnumber = Math.floor(Math.random() * (591 - 370 + 1) ) + 370;
     videowatchers.innerHTML =  `<i class="fa-solid fa-eye icon"></i> ${watchnumber} pessoas assistindo nesse momento`
+    
+    let barConstant = document.querySelector(".smartplayer-fake-bar")
+    var barNumber = parseInt(barConstant.style.width)
+    if (barNumber <= 98) {
+        console.log("Hey")
+    }
 }
 
 function triggerViewer() {
     setInterval(createWatchers, 2500)
-    setInterval(createBuyers, 8000)
-    let barConstant = document.querySelector(".smartplayer-fake-bar")
-    var barNumber = parseInt(barConstant.style.width)
-    alert(barNumber)
+    setInterval(createBuyers, 8000)    
 }
 
 function clickGender() {
