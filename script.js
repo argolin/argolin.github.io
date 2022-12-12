@@ -10,6 +10,7 @@ let footercopyright = document.querySelector(".footer-copyright")
 const videowatchers = document.querySelector(".video-watchers")
 let snackbar = document.querySelector("#snackbar")
 const questionoptions = document.querySelector(".question-options")
+const aquirenowbutton = document.querySelector(".aquirenowbutton")
 
 function upDate() {
     let evaluation = `Dia ${day} de ${month} de ${year} é a ultima data para ver o conteúdo desse site.`
@@ -37,8 +38,8 @@ function createWatchers() {
     
     let barConstant = document.querySelector(".smartplayer-fake-bar")
     var barNumber = parseInt(barConstant.style.width)
-    if (barNumber <= 98) {
-        console.log("Hey")
+    if (barNumber >= 98) {
+       aquirenowbutton.style.display = "block" 
     }
 }
 
