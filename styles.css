@@ -34,7 +34,10 @@ html, body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 750px) {
-    .comments-section, .footer-content, .video-content, .video-watchers {
+    .video-content, .video-watchers {
+        width: 96%;
+    }
+    .comments-section, .footer-content {
         width: 90%;
     }
     .main-title {
