@@ -17,6 +17,7 @@ function upDate() {
     let copyright = `Copyright ${year} - Todos os Direitos Reservados®`
     topbar.innerHTML = evaluation
     footercopyright.innerHTML = copyright
+    triggerViewer()
 }
 
 function eraseBuyers() {
@@ -48,76 +49,76 @@ function triggerViewer() {
     setInterval(createBuyers, 8000)    
 }
 
-function clickGender() {
-    let progressbarOne = document.querySelector(".line-one")
-    let questionPlacement = document.querySelector(".question-one-content")
-    let questions = document.querySelectorAll(".coordination")
-    let dividor = document.querySelector(".dividor")
-    dividor.remove()
-    questions[0].remove()
-    questions[1].remove()
-    let firstQuestion = document.createElement("button")
-    firstQuestion.classList.add("next-questions")
-    firstQuestion.innerHTML = "Nunca"
-    firstQuestion.onclick = clickEnergy
-    questionoptions.appendChild(firstQuestion)
-    let secondQuestion = document.createElement("button")
-    secondQuestion.classList.add("next-questions")
-    secondQuestion.innerHTML = "Raramente"
-    secondQuestion.onclick = clickEnergy
-    questionoptions.appendChild(secondQuestion)
-    let thirdQuestion = document.createElement("button")
-    thirdQuestion.classList.add("next-questions")
-    thirdQuestion.innerHTML = "As vezes"
-    thirdQuestion.onclick = clickEnergy
-    questionoptions.appendChild(thirdQuestion)
-    let fourthQuestion = document.createElement("button")
-    fourthQuestion.classList.add("next-questions")
-    fourthQuestion.innerHTML = "Frequentemente"
-    fourthQuestion.onclick = clickEnergy
-    questionoptions.appendChild(fourthQuestion)
-    let fifthQuestion = document.createElement("button")
-    fifthQuestion.classList.add("next-questions")
-    fifthQuestion.innerHTML = "Sempre"
-    fifthQuestion.onclick = clickEnergy
-    questionoptions.appendChild(fifthQuestion)
-    progressbarOne.classList.add("colored")
-    questionPlacement.innerHTML = "Com que frequência você realiza atividades físicas?"
-    questionoptions.style.paddingBottom = "0px"
-    questionoptions.style.paddingTop = "20px"
-}
+// function clickGender() {
+//     let progressbarOne = document.querySelector(".line-one")
+//     let questionPlacement = document.querySelector(".question-one-content")
+//     let questions = document.querySelectorAll(".coordination")
+//     let dividor = document.querySelector(".dividor")
+//     dividor.remove()
+//     questions[0].remove()
+//     questions[1].remove()
+//     let firstQuestion = document.createElement("button")
+//     firstQuestion.classList.add("next-questions")
+//     firstQuestion.innerHTML = "Nunca"
+//     firstQuestion.onclick = clickEnergy
+//     questionoptions.appendChild(firstQuestion)
+//     let secondQuestion = document.createElement("button")
+//     secondQuestion.classList.add("next-questions")
+//     secondQuestion.innerHTML = "Raramente"
+//     secondQuestion.onclick = clickEnergy
+//     questionoptions.appendChild(secondQuestion)
+//     let thirdQuestion = document.createElement("button")
+//     thirdQuestion.classList.add("next-questions")
+//     thirdQuestion.innerHTML = "As vezes"
+//     thirdQuestion.onclick = clickEnergy
+//     questionoptions.appendChild(thirdQuestion)
+//     let fourthQuestion = document.createElement("button")
+//     fourthQuestion.classList.add("next-questions")
+//     fourthQuestion.innerHTML = "Frequentemente"
+//     fourthQuestion.onclick = clickEnergy
+//     questionoptions.appendChild(fourthQuestion)
+//     let fifthQuestion = document.createElement("button")
+//     fifthQuestion.classList.add("next-questions")
+//     fifthQuestion.innerHTML = "Sempre"
+//     fifthQuestion.onclick = clickEnergy
+//     questionoptions.appendChild(fifthQuestion)
+//     progressbarOne.classList.add("colored")
+//     questionPlacement.innerHTML = "Com que frequência você realiza atividades físicas?"
+//     questionoptions.style.paddingBottom = "0px"
+//     questionoptions.style.paddingTop = "20px"
+// }
 
-function clickEnergy() {
-    let questionPlacement = document.querySelector(".question-one-content")
-    let progressbarTwo = document.querySelector(".line-two")
-    let spotTwo = document.querySelector(".spot-two")    
-    progressbarTwo.classList.add("colored")
-    spotTwo.classList.add("colored")
-    let constantQuestions = document.querySelectorAll(".next-questions")
-    constantQuestions[0].remove()
-    constantQuestions[1].remove()
-    constantQuestions[2].remove()
-    constantQuestions[3].remove()
-    constantQuestions[4].remove()
-    let videoButton = document.createElement("button")
-    videoButton.classList.add("videobutton")
-    videoButton.innerHTML = "QUERO VER O VÍDEO AGORA!"
-    questionPlacement.innerHTML = ""
-    videoButton.onclick = clickVideo
-    questionoptions.appendChild(videoButton)
-}
+// function clickEnergy() {
+//     let questionPlacement = document.querySelector(".question-one-content")
+//     let progressbarTwo = document.querySelector(".line-two")
+//     let spotTwo = document.querySelector(".spot-two")    
+//     progressbarTwo.classList.add("colored")
+//     spotTwo.classList.add("colored")
+//     let constantQuestions = document.querySelectorAll(".next-questions")
+//     constantQuestions[0].remove()
+//     constantQuestions[1].remove()
+//     constantQuestions[2].remove()
+//     constantQuestions[3].remove()
+//     constantQuestions[4].remove()
+//     let videoButton = document.createElement("button")
+//     videoButton.classList.add("videobutton")
+//     videoButton.innerHTML = "QUERO VER O VÍDEO AGORA!"
+//     questionPlacement.innerHTML = ""
+//     videoButton.onclick = clickVideo
+//     questionoptions.appendChild(videoButton)
+// }
 
-function removeCollab() {
-    let questioncontenttwo = document.querySelector(".question-content")
-    questioncontenttwo.classList.add("hidden")
-}
+// function removeCollab() {
+//     let questioncontenttwo = document.querySelector(".question-content")
+//     questioncontenttwo.classList.add("hidden")
+// }
 
-function clickVideo() {
-    let questioncontenttwo = document.querySelector(".question-content")
-    questioncontenttwo.classList.add("hiddenvalid")
-    setTimeout(removeCollab, 900)
-    triggerViewer()
-}
+// function clickVideo() {
+//     let questioncontenttwo = document.querySelector(".question-content")
+//     questioncontenttwo.classList.add("hiddenvalid")
+//     setTimeout(removeCollab, 900)
+//     triggerViewer()
+// }
 
 
 window.addEventListener("load", upDate());
